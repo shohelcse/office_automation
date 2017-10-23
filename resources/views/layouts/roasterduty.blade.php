@@ -1,4 +1,4 @@
-
+@include('layouts.link')
 @extends('layouts.app')
 
 @section('content')
@@ -27,8 +27,10 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-    
-    <li class="dropdown">
+     
+
+
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">course-management<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
           
@@ -42,6 +44,7 @@
          <li><a href='{{url("/roasterduty")}}'>Roaster duty</a></li>
          <li><a href="#section3">casual leave</a></li>
             
+    
       </ul>
      
    
@@ -49,8 +52,35 @@
   </div>
 </nav>
 
+<form class="form-horizontal">
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-highlight">
+            <thead>
+                <th >session</th>
+                <th >semester</th>
+                <th>docfile</th>
+                <th>start</th>
+                   <th>end</th>
+            </thead>
+            <tbody>
+                <tr>
+                   <td style="width:110px;"><input type="input" class="form-control" value=""><br></td>
+                    <td style="width:110px;"><input type="input" class="form-control" value=""><br></td>
+                   <td style="width:110px;"><input type="file" class="form-control" value=""><br></td>
+                   <td style="width:110px;"><input type="input" class="form-control" value=""><br></td>
+                    <td style="width:110px;"><input type="input" class="form-control" value=""><br></td>
+                   
+           
+                 
+                </tr>   
 
 
+
+
+            </tbody>
+        </table>
+    </div>
+</form>
 
 @endsection
 

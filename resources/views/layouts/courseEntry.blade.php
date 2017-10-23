@@ -1,4 +1,5 @@
 
+
 @extends('layouts.app')
 
 @section('content')
@@ -28,7 +29,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
     
-    <li class="dropdown">
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">course-management<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
           
@@ -42,8 +43,8 @@
          <li><a href='{{url("/roasterduty")}}'>Roaster duty</a></li>
          <li><a href="#section3">casual leave</a></li>
             
+    
       </ul>
-     
    
     </div>
   </div>
@@ -51,6 +52,49 @@
 
 
 
+
+<form class="form-horizontal">
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-highlight">
+            <thead>
+                <th >CourseCode</th>
+                <th style="width:200px;">CourseTitle</th>
+                <th>theory-lab</th>
+                <th>credit</th>
+               
+         
+            </thead>
+            <tbody>
+                <tr>
+                     <td style="width:50px;"><input type="text" class="form-control" value=""><br></td>
+					 
+                     <td style="width:50px;"><input type="text" class="form-control" value=""><br></td>
+                     <td style="width:50px;">
+				
+    
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>theory</option>
+      <option>Lab</option>
+  
+    </select>
+ </td>
+                     <td style="width:50px;"><input type="text" class="form-control" value=""><br></td>
+            
+                   </tr>
+            </tbody>
+        </table>
+    </div>
+
+              <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">
+                                   add new
+                                </button>
+          </div>
+          </div>
+
+</form>
+ 
 
 @endsection
 

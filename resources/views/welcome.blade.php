@@ -1,154 +1,220 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <title>User | Log in</title>
-      <link rel="stylesheet" type="text/css" href="{{url('css/bootstrap.css')}}">
-       <link rel="stylesheet" type="text/css" href="{{url('css/AdminLTE.min.css')}}">
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+@include('layouts.app')
+
+<form class="form-horizontal">
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-highlight">
+            <thead>
+                <th >CourseCode</th>
+                <th style="width:200px;">CourseTitle</th>
+                <th>Internal Teacher</th>
+                <th>External Teacher</th>
+                <th style="width:50px;">IQS</th>
+                 <th style="width:50px;">EQS</th>
+                 <th style="width:50px;">IQA</th>
+                 <th style="width:50px;">EQA</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CSE-3203</td>
+                    <td>Computer Graphics</td>
+                  
+                    <td>
+                 
+
+  <select class="myselect" style="width:200px;">
+
+     <option>Md.Mahmudul Hasan </option>
+                            <option>S.M.Hasan Sazzad Iqbal</option>
+                            <option>Md.Shafiul Azam</option>
+                            <option>Md.Mursalin</option>
+
+  </select>
 
 
 
-               <style>
+
+
+<script type="text/javascript">
+
+      $(".myselect").select2();
+
+</script>
+
+
+
+                    </td>
+                  <td>
+                  
+                         <select class="myselect" style="width:200px;">
+                            <option>Md.Mahmudul Hasan </option>
+                            <option>S.M.Hasan Sazzad Iqbal</option>
+                            <option>Md.Shafiul Azam</option>
+                            <option>Md.Mursalin</option>
+
+                            </select>
+
+
+
+<script type="text/javascript">
+
+      $(".myselect").select2();
+
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $(":checkbox").wrap("<span style='background-color:red'>");
+});
+</script>
+
+                    </td>
+                   
+                    <td style="width:50px;"><input type="checkbox" class="form-control" value=""><br></td>
+                    <td style="width:50px;"><input type="checkbox" class="form-control" value=""><br></td>
+                    <td style="width:50px;"><input type="checkbox" class="form-control" value=""><br></td>
+                    <td style="width:50px;"><input type="checkbox" class="form-control" value=""><br></td>
+                   
            
+                 
+                </tr>   
 
-            .full-height {
-                height: 100vh;
-            }
+                
+                
+                
+                <tr>
+                    <td>CSE-3203</td>
+                    <td>Computer Graphics</td>
+                  
+                    <td>
+                 
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+  <select class="myselect" style="width:200px;">
 
-            .position-ref {
-                position: relative;
-            }
+     <option>Md.Mahmudul Hasan </option>
+                            <option>S.M.Hasan Sazzad Iqbal</option>
+                            <option>Md.Shafiul Azam</option>
+                            <option>Md.Mursalin</option>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-         
-        </style>
-</head>
-
-  
-
-<body class="hold-transition login-page">
-
-        <div class=" full-height">
-  
-</div>
-     <div class="login-box">
-  <div class="login-logo">
+  </select>
 
 
-    <a href=""><b>User</b> Login</a>
-  </div>
- 
- 
- 
 
-   @extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
 
-                <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
-                        {{ csrf_field() }}
+<script type="text/javascript">
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+      $(".myselect").select2();
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+</script>
 
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
 
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
+                    </td>
+                  <td>
+                  
+                         <select class="myselect" style="width:200px;">
+                            <option>Md.Mahmudul Hasan </option>
+                            <option>S.M.Hasan Sazzad Iqbal</option>
+                            <option>Md.Shafiul Azam</option>
+                            <option>Md.Mursalin</option>
 
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+                            </select>
 
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
-                                </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+<script type="text/javascript">
+
+      $(".myselect").select2();
+
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $(":checkbox").wrap("<span style='background-color:red'>");
+});
+</script>
+
+                    </td>
+                    <td style="width:50px;"><input type="checkbox" class="form-control" value=""><br></td>
+                    <td style="width:50px;"><input type="checkbox" class="form-control" value=""><br></td>
+                    <td style="width:50px;"><input type="checkbox" class="form-control" value=""><br></td>
+                    <td style="width:50px;"><input type="checkbox" class="form-control" value=""><br></td>
+                   
+           
+                 
+                </tr>   
+
+
+
+
+
+
+                <tr>
+                    <td>CSE-3203</td>
+                    <td>Numerical analysis</td>
+                  
+                    <td>
+                 
+
+  <select class="myselect" style="width:200px;">
+
+     <option>Md.Mahmudul Hasan </option>
+                            <option>S.M.Hasan Sazzad Iqbal</option>
+                            <option>Md.Shafiul Azam</option>
+                            <option>Md.Mursalin</option>
+
+  </select>
+
+
+
+
+
+<script type="text/javascript">
+
+      $(".myselect").select2();
+
+</script>
+
+
+
+                    </td>
+                  <td>
+                  
+                         <select class="myselect" style="width:200px;">
+                            <option>Md.Mahmudul Hasan </option>
+                            <option>S.M.Hasan Sazzad Iqbal</option>
+                            <option>Md.Shafiul Azam</option>
+                            <option>Md.Mursalin</option>
+
+                            </select>
+
+
+
+<script type="text/javascript">
+
+      $(".myselect").select2();
+
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $(":checkbox").wrap("<span style='background-color:red'>");
+});
+</script>
+
+                    </td>
+                  
+                    <td style="width:50px;"><input type="checkbox" class="form-control" value=""><br></td>
+                    <td style="width:50px;"><input type="checkbox" class="form-control" value=""><br></td>
+                    <td style="width:50px;"><input type="checkbox" class="form-control" value=""><br></td>
+                    <td style="width:50px;"><input type="checkbox" class="form-control" value=""><br></td>
+                   
+                 
+                </tr>
+            </tbody>
+        </table>
     </div>
-</div>
-@endsection
-
-       
-
-   
-
-
-</div>
-</body>
-</html>
+</form>

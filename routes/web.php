@@ -12,15 +12,60 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::get('/courseModify',function(){
 	return view('layouts.courseModify');
 });
 
+Route::get('/header',function(){
+	return view('template.header');
+});
+
 Route::get('/courseAssign',function(){
 	return view('layouts.courseAssign');
+});
+Route::get('/courseEntry',function(){
+	return view('layouts.courseEntry');
+});
+
+Route::get('/roasterduty',function(){
+	return view('layouts.roasterduty');
+});
+
+Route::get('/courseEntry2',function(){
+	return view('layouts.courseEntry2');
+});
+
+Route::get('/courseAssign2',function(){
+	return view('layouts.courseAssign2');
+});
+
+Route::get('/courseTracking',function(){
+	return view('layouts.courseTracking');
+});
+
+
+Route::get('/viewCourseStatus',function(){
+	return view('layouts.viewCourseStatus');
+});
+Route::get('/viewCourseStatus2',function(){
+	return view('layouts.viewCourseStatus2');
+});
+Route::get('/courseTracking2',function(){
+	return view('layouts.courseTracking2');
+});
+
+
+
+
+
+///another try
+
+
+Route::get('/testing',function(){
+	return view('layouts.testing');
 });
 
 Auth::routes();
