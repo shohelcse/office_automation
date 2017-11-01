@@ -16,5 +16,6 @@
     <script type="text/javascript" src="{{url('js/jquery.js')}}"></script>
    <script type="text/javascript" src="{{url('js/bootstrap.min.js')}}"></script>
     <script type="text/javascript" src="{{url('js/select2.min.js')}}"></script>
+     <script type="text/javascript" src="{{url('js/angular.js')}}"></script>
 
 </head>

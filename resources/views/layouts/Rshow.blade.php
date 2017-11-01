@@ -12,6 +12,7 @@
 
 
 <!--header of page-->
+
 <nav class="navbar nav-pills nav-stacked">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -67,11 +68,52 @@
 
 
 </nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-1">
+           
+              
+
+                <div class="panel-body">
+
+
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+
+      <th>session</th>
+      <th>semester</th>
+      <th>download</th>
+        <th>start</th>
+        <th>end</th>
+ 
+    </tr>
+  </thead>
+  <tbody>
+  @if(count($roasters)>0)
+  @foreach($roasters->all() as $roaster)
+    <tr>
+    
+      <td>{{$roaster->session}}</td>
+      <td>{{$roaster->semester}}</td>
+      <td>.doc </td>
+      <td>{{$roaster->start}}</td>
+      <td>{{$roaster->end}}</td>
+ 
+    </tr>
+  
+
+@endforeach
+@endif
+    
+  </tbody>
+</table> 
+</div>
+</div>
+
+</div>
+</div>
+
+
 @endsection
-
-
-<!--rest of body-->
-
-
-
-                  

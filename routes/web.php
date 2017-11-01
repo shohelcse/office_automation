@@ -68,6 +68,54 @@ Route::get('/testing',function(){
 	return view('layouts.testing');
 });
 
+///testing site
+Route::get('/entry3',function(){
+	return view('layouts.entry3');
+});
+Route::get('/app2',function(){
+	return view('layouts.app2');
+});
+
+Route::get('/Radding',function(){
+	return view('layouts.Radding');
+});
+
+
+
+
+
+
+
+
+
+
+
+///diffrent
+Route::get('/Rshow','CreatesController@Rshow');
+Route::get('/Radding',function(){
+	return view('layouts.Radding');
+});
+
+Route::post('/insert','CreatesController@add');
+
+
+
+///different 2
+
+Route::get('/Rshow','CreatesController@Rshow');
+Route::get('/Radding',function(){
+	return view('layouts.Radding');
+});
+
+Route::post('/insert','CreatesController@add');
+
+
+
+
+
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

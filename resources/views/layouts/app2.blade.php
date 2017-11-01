@@ -79,51 +79,31 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href='{{url("/home")}}'>Home</a>
+      <a class="navbar-brand" href="#">Home</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+  <ul class="nav navbar-nav">
     
     <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Manage<span class="caret"></span></a>
-
-                    <ul class="dropdown-menu multi-level">
-                        <li><a href="#">Session</a></li>
-                        <li><a href="#">Semester</a></li>
-                      
-                        <li class="dropdown-submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses</a>
-                            <ul class="dropdown-menu">
-                                 <li><a href='{{url("/courseEntry2")}}'>Course-entry</a></li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">course-management<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+          
+             <li><a href='{{url("/courseEntry")}}'>course-entry</a></li>
    
-                                 <li><a href='{{url("/courseAssign")}}'>Assign-course</a></li>
-                                   <li><a href='{{url("/courseTracking")}}'>Course-tracking</a></li>
-                        
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                
-
-
-
-   <li class="dropdown">
-          <a href='{{url("/roasterduty")}}' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Roaster duty<span class="caret"></span></a>
-
-                    <ul class="dropdown-menu multi-level">
-                        <li><a href='{{url("/Radding")}}'>add-duty</a></li>
-                        <li><a href='{{url("/Rshow")}}'>show-duty</a></li>
-                 
-                    </ul>
-                </li>
-
-
-          <!--        <li><a href='{{url("/roasterduty")}}'>Roaster duty</a></li> -->
-         <li><a href="#section3">Casual leave</a></li>
-            </ul>
-
-
+        <li><a href='{{url("/courseAssign")}}'>assign-course</a></li>
+        <li><a href='{{url("/courseTracking")}}'>Course-tracking</a></li>
+          <li><a href='{{url("/viewCourseStatus")}}'>Course-Status</a></li>
+          </ul>
+        </li>
+         <li><a href='{{url("/roasterduty")}}'>Roaster duty</a></li>
+         <li><a href="#section3">casual leave</a></li>
+            
+      </ul>
+     
+   
+    </div>
+  </div>
 </nav>
 
 </div>
@@ -229,4 +209,3 @@
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
-    

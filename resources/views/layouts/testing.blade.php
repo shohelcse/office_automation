@@ -1,5 +1,5 @@
 @include('layouts.link')
-<body>
+
 <form class="form-horizontal">
     <div class="table-responsive">
         <table class="table table-bordered table-striped table-highlight">
@@ -196,5 +196,3 @@ $(document).ready(function(){
         </table>
     </div>
 </form>
-</body>
-</html>

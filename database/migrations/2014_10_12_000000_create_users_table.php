@@ -8,7 +8,7 @@ class CreateUsersTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     *a
      * @return void
      */
     public function up()
@@ -18,6 +18,9 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('department');
+            $table->string('position');
+          //  $table->string('gender');
+          //  $table->string('inputphone');
             $table->string('email')->unique();
             $table->string('password');
             $table->rememberToken();
