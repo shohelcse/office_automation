@@ -102,14 +102,6 @@ Route::post('/insert','CreatesController@add');
 
 ///different 2
 
-Route::get('/Rshow','CreatesController@Rshow');
-Route::get('/Radding',function(){
-	return view('layouts.Radding');
-});
-
-Route::post('/insert','CreatesController@add');
-
-
 
 
 

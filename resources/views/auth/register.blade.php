@@ -39,6 +39,7 @@
               <option value="CSE">CSE</option>
               <option value="ICE">ICE</option>
               <option value="EEE">EEE</option>
+                <option value="CE">CE</option>
             
               <option selected value="1">choose</option>
           </select>
@@ -77,20 +78,26 @@
 
 <!-- Radio button -->
 
-   <div class="form-group{{ $errors->has('gender') ? ' has-error' : '' }}">
-                            <label for="gender" class="col-md-4 control-label">Gender</label>
+   <div class="form-group">
+           <label  class="col-md-4 control-label">Gender</label>
 
-                            <div class="col-md-6">
-  <label><input type="radio" name="male" value="male">male </label>
-  <label><input type="radio" name="female" value="female">female</label>
+    <div class="col-md-6">
+  <label><input type="radio" name="gender" value="male">male </label>
+  <label><input type="radio" name="gender" value="female">female</label>
+ </div>
 
-                                @if ($errors->has('gender'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('gender') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
