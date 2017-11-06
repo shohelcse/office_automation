@@ -29,7 +29,7 @@ public function add(Request $request){
 	$roasters->end=$request->input('end');
 	$roasters->save();
 	return redirect('/Rshow')->with('info','Student saved successfully');
-	//return redirect('/layouts.Radding')->with('info','Student saved successfully');
+	//return redirect('/Radding')->with('info','Student saved successfully');
 }
 
 

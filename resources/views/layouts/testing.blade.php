@@ -1,198 +1,184 @@
 @include('layouts.link')
-
-<form class="form-horizontal">
-    <div class="table-responsive">
-        <table class="table table-bordered table-striped table-highlight">
-            <thead>
-                <th >CourseCode</th>
-                <th style="width:200px;">CourseTitle</th>
-                <th>Internal Teacher</th>
-                <th>External Teacher</th>
-              
-            </thead>
-            <tbody>
-                <tr>
-                    <td>CSE-3203</td>
-                    <td>Computer Graphics</td>
-                  
-                    <td>
-                 
-
-  <select class="myselect" style="width:200px;">
-
-   <option>Md.Mahmudul Hasan </option>
-                            <option>S.M.Hasan Sazzad Iqbal</option>
-                            <option>Md.Shafiul Azam</option>
-                            <option>Md.Mursalin</option>
-
-  </select>
-
-
-
-
-
-<script type="text/javascript">
-
-      $(".myselect").select2();
-
-</script>
-
-
-
-                    </td>
-                  <td>
-          
-                   <select class="myselect" style="width:200px;">
-              <option>Md.Mahmudul Hasan </option>
-                            <option>S.M.Hasan Sazzad Iqbal</option>
-                            <option>Md.Shafiul Azam</option>
-                            <option>Md.Mursalin</option>
-
-                            </select>
-
-
-
-<script type="text/javascript">
-
-      $(".myselect").select2();
-
-</script>
-
-
-<script>
-$(document).ready(function(){
-    $(":checkbox").wrap("<span style='background-color:red'>");
-});
-</script>
-
-             
-                 
-                </tr>   
-
-        
-        
-        
-                <tr>
-                    <td>CSE-3203</td>
-                    <td>Computer Graphics</td>
-                  
-                    <td>
-                 
-
-  <select class="myselect" style="width:200px;">
-
-   <option>Md.Mahmudul Hasan </option>
-                            <option>S.M.Hasan Sazzad Iqbal</option>
-                            <option>Md.Shafiul Azam</option>
-                            <option>Md.Mursalin</option>
-
-  </select>
-
-
-
-
-
-<script type="text/javascript">
-
-      $(".myselect").select2();
-
-</script>
-
-
-
-                    </td>
-                  <td>
-          
-                   <select class="myselect" style="width:200px;">
-              <option>Md.Mahmudul Hasan </option>
-                            <option>S.M.Hasan Sazzad Iqbal</option>
-                            <option>Md.Shafiul Azam</option>
-                            <option>Md.Mursalin</option>
-
-                            </select>
-
-
-
-<script type="text/javascript">
-
-      $(".myselect").select2();
-
-</script>
-
-
-<script>
-$(document).ready(function(){
-    $(":checkbox").wrap("<span style='background-color:red'>");
-});
-</script>
-
-         
-           
-                 
-                </tr>   
-
-
-
-
-
-
-        <tr>
-                    <td>CSE-3203</td>
-                    <td>Numerical analysis</td>
-                  
-                    <td>
-                 
-
-  <select class="myselect" style="width:200px;">
-
-   <option>Md.Mahmudul Hasan </option>
-                            <option>S.M.Hasan Sazzad Iqbal</option>
-                            <option>Md.Shafiul Azam</option>
-                            <option>Md.Mursalin</option>
-
-  </select>
-
-
-
-
-
-<script type="text/javascript">
-
-      $(".myselect").select2();
-
-</script>
-
-
-
-                    </td>
-                  <td>
-          
-                   <select class="myselect" style="width:200px;">
-              <option>Md.Mahmudul Hasan </option>
-                            <option>S.M.Hasan Sazzad Iqbal</option>
-                            <option>Md.Shafiul Azam</option>
-                            <option>Md.Mursalin</option>
-
-                            </select>
-
-
-
-<script type="text/javascript">
-
-      $(".myselect").select2();
-
-</script>
-
-
-<script>
-$(document).ready(function(){
-    $(":checkbox").wrap("<span style='background-color:red'>");
-});
-</script>
-
-                 
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</form>
+<body>
+
+
+
+<table id="myTable" class="display" cellspacing="0" width="100%">
+<thead>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  </thead>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr> <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr> <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr> <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

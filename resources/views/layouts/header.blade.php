@@ -16,9 +16,11 @@
        <link rel="stylesheet" type="text/css" href="{{url('css/bootstrap.css')}}">
   
    <link rel="stylesheet" type="text/css" href="{{url('css/select2.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url('css/jquery.dataTables.min.css')}}">
    <script type="text/javascript" src="{{url('js/jquery.js')}}"></script>
    <script type="text/javascript" src="{{url('js/bootstrap.min.js')}}"></script>
     <script type="text/javascript" src="{{url('js/select2.min.js')}}"></script>
+      <script type="text/javascript" src="{{url('js/jquery.dataTables.min.js')}}"></script>
 
 
     <style>

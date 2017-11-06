@@ -26,9 +26,6 @@ Route::get('/header',function(){
 Route::get('/courseAssign',function(){
 	return view('layouts.courseAssign');
 });
-Route::get('/courseEntry',function(){
-	return view('layouts.courseEntry');
-});
 
 Route::get('/roasterduty',function(){
 	return view('layouts.roasterduty');
@@ -55,6 +52,10 @@ Route::get('/viewCourseStatus2',function(){
 });
 Route::get('/courseTracking2',function(){
 	return view('layouts.courseTracking2');
+});
+
+Route::get('/sessionCreate',function(){
+	return view('layouts.sessionCreate');
 });
 
 
@@ -91,16 +92,23 @@ Route::get('/Radding',function(){
 
 
 ///diffrent
+
 Route::get('/Rshow','CreatesController@Rshow');
 Route::get('/Radding',function(){
 	return view('layouts.Radding');
 });
-
 Route::post('/insert','CreatesController@add');
-
-
-
 ///different 2
+
+
+///teachers route
+
+Route::get('/courseEntry3',function(){
+	return view('layouts.courseEntry3');
+});
+Route::post('/insert2','coursesEntry@add');
+///different 2
+
 
 
 

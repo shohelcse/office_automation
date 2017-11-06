@@ -37,6 +37,13 @@
 
 
 
+       <ul class="nav navbar-nav navbar-left">
+
+
+
+<li>@include('layouts.navbar')</li>
+
+</ul>
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
 

@@ -31,7 +31,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Manage<span class="caret"></span></a>
 
                     <ul class="dropdown-menu multi-level">
-                        <li><a href="#">Session</a></li>
+                        <li><a href='{{url("/sessionCreate")}}'>Session</a></li>
                         <li><a href="#">Semester</a></li>
                       
                         <li class="dropdown-submenu">

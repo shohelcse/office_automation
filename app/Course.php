@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Roaster extends Model
+class Course extends Model
 {
-   // protected $table='roasters';
+    //
 }

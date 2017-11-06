@@ -18,4 +18,17 @@
     <script type="text/javascript" src="{{url('js/select2.min.js')}}"></script>
      <script type="text/javascript" src="{{url('js/angular.js')}}"></script>
 
+
+
+  <!--<script src="{{ asset('js/app.js')}}"></script>-->
+
+ <link rel="stylesheet" href="{{asset('css/jquery.dataTables.min.css')}}">
+<script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
+<script src="{{asset('js/jquery.dataTables.min.js')}}"></script>
+
+<script>
+$(document).ready(function(){
+    $('#myTable').DataTable();
+});
+</script>
 </head>
