@@ -1,4 +1,4 @@
-
+@include('layouts.header')
 @include('layouts.app2')
 <body>
     <div id="app">
@@ -126,4 +126,3 @@
   
 </body>
 </html>
-    

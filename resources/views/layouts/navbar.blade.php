@@ -23,7 +23,10 @@
                             <ul class="dropdown-menu">
                                  <li><a href='{{url("/courseEntry3")}}'>Entry</a></li>
    
-                                 <li><a href='{{url("/courseAssign")}}'>Assign</a></li>
+                              <!--   <li><a href='{{url("/courseAssign")}}'>Assign</a></li> -->  
+
+                            <!--    <li><a href='{{url("/courseAssign3")}}'>Assign</a></li> -->
+                            <li><a href='{{url("/courseAssign")}}'>Assign</a></li> 
                                    <li><a href='{{url("/courseTracking")}}'>Tracking</a></li>
                         
                             </ul>

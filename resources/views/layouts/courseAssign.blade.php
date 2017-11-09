@@ -97,11 +97,11 @@
 
   <select id="myselect1" style="width:200px;">
 
-   <option>Md.Mahmudul Hasan </option>
-                            <option>S.M.Hasan Sazzad Iqbal</option>
-                            <option>Md.Shafiul Azam</option>
-                            <option>Md.Mursalin</option>
-
+   <option></option>
+                    @foreach($data as $d)
+                      <option>{{$d->name}}</option>
+                            
+                   @endforeach
   </select>
 
 
@@ -110,7 +110,11 @@
 
 <script type="text/javascript">
 
-      $("#myselect1").select2();
+      $("#myselect1").select2(
+        {
+            placeholder:"select a name",
+            allowClear:true
+        });
 
 </script>
 
@@ -120,18 +124,21 @@
                   <td>
           
                    <select class="myselect" style="width:200px;">
-              <option>Md.Mahmudul Hasan </option>
-                            <option>S.M.Hasan Sazzad Iqbal</option>
-                            <option>Md.Shafiul Azam</option>
-                            <option>Md.Mursalin</option>
-
+                   <option></option>
+                    @foreach($data as $d)
+                      <option>{{$d->name}}</option>
+                            
+                   @endforeach
                             </select>
 
 
 
 <script type="text/javascript">
 
-      $(".myselect").select2();
+      $(".myselect").select2({
+         placeholder:"select a name",
+            allowClear:true
+      });
 
 </script>
 

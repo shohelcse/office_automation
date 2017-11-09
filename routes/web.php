@@ -23,9 +23,7 @@ Route::get('/header',function(){
 	return view('template.header');
 });
 
-Route::get('/courseAssign',function(){
-	return view('layouts.courseAssign');
-});
+
 
 Route::get('/roasterduty',function(){
 	return view('layouts.roasterduty');
@@ -81,6 +79,11 @@ Route::get('/Radding',function(){
 	return view('layouts.Radding');
 });
 
+Route::get('/courseAssign3',function(){
+	return view('layouts.courseAssign3');
+});
+
+
 
 
 
@@ -110,6 +113,25 @@ Route::post('/insert2','coursesEntry@add');
 ///different 2
 
 
+
+///for session create
+
+
+
+Route::post('/insert5','createSession@add');
+
+
+//for testing
+
+
+Route::get('/courseEntry4',function(){
+	return view('layouts.courseEntry4');
+});
+Route::post('/insert4','coursesEntry@store');
+
+
+
+Route::get('/courseAssign','assignController@testfunction');
 
 
 
