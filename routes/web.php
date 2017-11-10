@@ -88,6 +88,10 @@ Route::get('/courseAssign3',function(){
 
 
 
+Route::get('/collection',function(){
+	return view('layouts.collection');
+});
+
 
 
 
@@ -133,6 +137,14 @@ Route::post('/insert4','coursesEntry@store');
 
 Route::get('/courseAssign','assignController@testfunction');
 
+Route::post('/insert7','assignController@testfunction');
+
+
+Route::get('/courseAssign3','assignController2@myfunction');
+
+
+
+///testing..
 
 
 

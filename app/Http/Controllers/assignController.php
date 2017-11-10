@@ -12,7 +12,13 @@ class assignController extends Controller
     	return view('layouts.courseAssign',compact('data'));
     }
     */
-public function testfunction(){
+public function testfunction(Request $request){
+     
+ $this->validate($request,[
+        'session'=> 'required',
+        'semester'=> 'required'
+    ]);
+  //var_dump($request->input('session'));
     	//$query=DB::table('users')->get();
     //	$results = DB::select('select * from users where 'position'='Teacher');
     //	$data = DB::table('users')->where('name', 'shohel');
@@ -36,15 +42,22 @@ $data = DB::table('users')->where('position','Teacher')->where('department','CSE
 return view('layouts.courseAssign',compact('data'));
  */
 
+/*
  $data = DB::table('users')->where('position','Teacher')->get();
-return view('layouts.courseAssign',compact('data'));
+ $result = DB::table('courses')->get();
+*/ 
+
+
+
+  $data = DB::table('users')->where('position','Teacher')->get();
+ $result = DB::table('courses')->where('session',$request->input('session'))->where('semester',$request->input('semester'))->get();
+
+return view('layouts.courseAssign',compact('data','result'));
     }
 
 
 
 }
-
-
 
 
 

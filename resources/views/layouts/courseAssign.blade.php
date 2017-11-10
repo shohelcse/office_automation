@@ -88,76 +88,46 @@
               
             </thead>
             <tbody>
-                <tr>
-                    <td>CSE-3203</td>
-                    <td>Computer Graphics</td>
-                  
-                    <td>
-                 
 
-  <select id="myselect1" style="width:200px;">
+       @foreach($result as $user)
 
-   <option></option>
-                    @foreach($data as $d)
+
+           <tr>
+                <td> {{$user->courseCode}}<br></td>
+                <td> {{$user->courseTitle}}<br></td>
+                <td>
+  <select name="internal" class="myselect1" style="width:200px;">
+
+                      <option></option>
+                     @foreach($data as $d)
                       <option>{{$d->name}}</option>
                             
-                   @endforeach
-  </select>
+                     @endforeach
+    </select>
 
-
-
-
-
-<script type="text/javascript">
-
-      $("#myselect1").select2(
-        {
-            placeholder:"select a name",
-            allowClear:true
-        });
-
-</script>
-
-
-
-                    </td>
+            </td>
                   <td>
           
-                   <select class="myselect" style="width:200px;">
+  <select name="external" class="myselect" style="width:200px;">
                    <option></option>
                     @foreach($data as $d)
                       <option>{{$d->name}}</option>
                             
                    @endforeach
                             </select>
-
-
-
-<script type="text/javascript">
-
-      $(".myselect").select2({
-         placeholder:"select a name",
-            allowClear:true
-      });
-
-</script>
-
-
-
-             
                  
                 </tr>   
 
-        
+          @endforeach
         
         
             </tbody>
         </table>
     </div>
          <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
+         <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                   add new
+                                   Submit
                                 </button>
           </div>
           </div>
@@ -174,10 +144,29 @@
 
 
 
+<script type="text/javascript">
+
+      $(".myselect").select2({
+         placeholder:"select a name",
+            allowClear:true
+      });
+
+</script>
 
 
 
 
+
+
+<script type="text/javascript">
+
+      $(".myselect1").select2(
+        {
+            placeholder:"select a name",
+            allowClear:true
+        });
+
+</script>
 
 
 
@@ -189,3 +178,12 @@
 </body>
 </html>
     
+
+
+
+
+
+
+
+
+

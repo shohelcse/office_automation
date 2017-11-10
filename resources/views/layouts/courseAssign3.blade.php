@@ -15,7 +15,7 @@
 
 
 
-<form class="form-horizontal" method="POST" action="{{url('/insert4')}}" >
+<form class="form-horizontal" method="POST" action="{{url('/insert7')}}" >
 
    {{csrf_field() }}
            <fieldset>
@@ -44,16 +44,18 @@
                 <tr>
                 <td style="width:10px;">
         <select name="session" class="form-control">
-              <option value="2012-13">2012-13</option>
-              <option value="2013-14">2013-14</option>
-              <option value="2014-15">2014-15</option>
-              <option value="2015-16">2015-16</option>
-              <option value="2016-17">2016-17</option>
-              <option value="2017-18">2017-18</option>
-             
-              <option selected value="1">choose</option>
+           
+                   <option selected value="1">choose</option>
+                    @foreach($data as $d)
+                      <option>{{$d->session}}</option>
+                            
+                   @endforeach
+                            </select>
               </select>
-                      
+          
+
+
+
     </td>
            
                     
