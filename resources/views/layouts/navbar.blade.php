@@ -21,7 +21,8 @@
                         <li class="dropdown-submenu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses</a>
                             <ul class="dropdown-menu">
-                                 <li><a href='{{url("/courseEntry3")}}'>Entry</a></li>
+              <li><a href='{{url("/courseEntry3")}}'>Entry</a></li> 
+                                           <!--      <li><a href='{{url("/courseEntry4")}}'>Entry</a></li>-->
    
                               <!--   <li><a href='{{url("/courseAssign")}}'>Assign</a></li> -->  
 

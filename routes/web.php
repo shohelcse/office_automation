@@ -138,6 +138,7 @@ Route::post('/insert4','coursesEntry@store');
 Route::get('/courseAssign','assignController@testfunction');
 
 Route::post('/insert7','assignController@testfunction');
+Route::get('/courseEntry3','sessionController@myfunction');
 
 
 Route::get('/courseAssign3','assignController2@myfunction');

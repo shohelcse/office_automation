@@ -48,16 +48,15 @@
             <tbody>
                 <tr>
                 <td style="width:10px;">
+       
         <select name="session" class="form-control">
-              <option value="2012-13">2012-13</option>
-              <option value="2013-14">2013-14</option>
-              <option value="2014-15">2014-15</option>
-              <option value="2015-16">2015-16</option>
-              <option value="2016-17">2016-17</option>
-              <option value="2017-18">2017-18</option>
-             
-              <option selected value="1">choose</option>
-              </select>
+           
+                   <option selected value="1">choose</option>
+                    @foreach($data as $d)
+                      <option>{{$d->session}}</option>
+                            
+                   @endforeach
+                            </select>
                       
     </td>
            
@@ -93,7 +92,7 @@
 
 
 
-<div class="col-md-12 col-md-offset-0">
+<div class="col-md-12 ">
 
     <div class="table-responsive" >
         <table class="table table-bordered table-striped table-highlight">
@@ -107,9 +106,9 @@
             </thead>
             <tbody>
                 <tr>
-                     <td style="width:50px;"><input type="text" class="form-control" name="courseCode"><br></td>
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseCode[]"><br></td>
            
-                     <td style="width:50px;"><input type="text" class="form-control" name="courseTitle"><br></td>
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseTitle[]"><br></td>
                      <td style="width:50px;">
         
     
@@ -119,17 +118,238 @@
    <div class="form-group">
         
     <div class="col-md-6">
-  <label><input type="radio" name="TheoryLab" value="Theory">Theory</label>
-  <label><input type="radio" name="TheoryLab" value="Lab">Lab</label>
+  <label><input type="radio" name="TheoryLab[0]" value="Theory">Theory</label>
+  <label><input type="radio" name="TheoryLab[0]" value="Lab">Lab</label>
  </div>
 
 </div>
 
  </td>
-                     <td style="width:50px;"><input type="text" class="form-control" name="credit"><br></td>
+                     <td style="width:50px;"><input type="text" class="form-control" name="credit[]"><br></td>
             
                    </tr>
 
+                <tr>
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseCode[]"><br></td>
+           
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseTitle[]"><br></td>
+                     <td style="width:50px;">
+        
+    
+   
+
+
+   <div class="form-group">
+        
+    <div class="col-md-6">
+  <label><input type="radio" name="TheoryLab[1]" value="Theory">Theory</label>
+  <label><input type="radio" name="TheoryLab[1]" value="Lab">Lab</label>
+ </div>
+
+</div>
+
+ </td>
+                     <td style="width:50px;"><input type="text" class="form-control" name="credit[]"><br></td>
+            
+                   </tr>
+
+                <tr>
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseCode[]"><br></td>
+           
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseTitle[]"><br></td>
+                     <td style="width:50px;">
+        
+    
+   
+
+
+   <div class="form-group">
+        
+    <div class="col-md-6">
+  <label><input type="radio" name="TheoryLab[2]" value="Theory">Theory</label>
+  <label><input type="radio" name="TheoryLab[2]" value="Lab">Lab</label>
+ </div>
+
+</div>
+
+ </td>
+                     <td style="width:50px;"><input type="text" class="form-control" name="credit[]"><br></td>
+            
+                   </tr>
+
+
+
+                        <tr>
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseCode[]"><br></td>
+           
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseTitle[]"><br></td>
+                     <td style="width:50px;">
+        
+    
+   
+
+
+   <div class="form-group">
+        
+    <div class="col-md-6">
+  <label><input type="radio" name="TheoryLab[3]" value="Theory">Theory</label>
+  <label><input type="radio" name="TheoryLab[3]" value="Lab">Lab</label>
+ </div>
+
+</div>
+
+ </td>
+                     <td style="width:50px;"><input type="text" class="form-control" name="credit[]"><br></td>
+            
+                   </tr>
+
+
+
+                        <tr>
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseCode[]"><br></td>
+           
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseTitle[]"><br></td>
+                     <td style="width:50px;">
+        
+    
+   
+
+
+   <div class="form-group">
+        
+    <div class="col-md-6">
+  <label><input type="radio" name="TheoryLab[4]" value="Theory">Theory</label>
+  <label><input type="radio" name="TheoryLab[4]" value="Lab">Lab</label>
+ </div>
+
+</div>
+
+ </td>
+                     <td style="width:50px;"><input type="text" class="form-control" name="credit[]"><br></td>
+            
+                   </tr>
+
+
+                        <tr>
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseCode[]"><br></td>
+           
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseTitle[]"><br></td>
+                     <td style="width:50px;">
+        
+    
+   
+
+
+   <div class="form-group">
+        
+    <div class="col-md-6">
+  <label><input type="radio" name="TheoryLab[5]" value="Theory">Theory</label>
+  <label><input type="radio" name="TheoryLab[5]" value="Lab">Lab</label>
+ </div>
+
+</div>
+
+ </td>
+                     <td style="width:50px;"><input type="text" class="form-control" name="credit[]"><br></td>
+            
+                   </tr>
+
+
+
+
+
+     <tr>
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseCode[]"><br></td>
+           
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseTitle[]"><br></td>
+                     <td style="width:50px;">
+        
+    
+   
+
+
+   <div class="form-group">
+        
+    <div class="col-md-6">
+  <label><input type="radio" name="TheoryLab[6]" value="Theory">Theory</label>
+  <label><input type="radio" name="TheoryLab[6]" value="Lab">Lab</label>
+ </div>
+
+</div>
+
+ </td>
+                     <td style="width:50px;"><input type="text" class="form-control" name="credit[]"><br></td>
+            
+                   </tr>
+                        <tr>
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseCode[]"><br></td>
+           
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseTitle[]"><br></td>
+                     <td style="width:50px;">
+        
+    
+   
+
+
+   <div class="form-group">
+        
+    <div class="col-md-6">
+  <label><input type="radio" name="TheoryLab[7]" value="Theory">Theory</label>
+  <label><input type="radio" name="TheoryLab[7]" value="Lab">Lab</label>
+ </div>
+
+</div>
+
+ </td>
+                     <td style="width:50px;"><input type="text" class="form-control" name="credit[]"><br></td>
+            
+                   </tr>
+                        <tr>
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseCode[]"><br></td>
+           
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseTitle[]"><br></td>
+                     <td style="width:50px;">
+        
+    
+   
+
+
+   <div class="form-group">
+        
+    <div class="col-md-6">
+  <label><input type="radio" name="TheoryLab[8]" value="Theory">Theory</label>
+  <label><input type="radio" name="TheoryLab[8]" value="Lab">Lab</label>
+ </div>
+
+</div>
+
+ </td>
+                     <td style="width:50px;"><input type="text" class="form-control" name="credit[]"><br></td>
+            
+                   </tr>
+                        <tr>
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseCode[]"><br></td>
+           
+                     <td style="width:50px;"><input type="text" class="form-control" name="courseTitle[]"><br></td>
+                     <td style="width:50px;">
+        
+    
+   
+
+
+   <div class="form-group">
+        
+    <div class="col-md-6">
+  <label><input type="radio" name="TheoryLab[9]" value="Theory">Theory</label>
+  <label><input type="radio" name="TheoryLab[9]" value="Lab">Lab</label>
+ </div>
+
+</div>
+
+ </td>
+                     <td style="width:50px;"><input type="text" class="form-control" name="credit[]"><br></td>
+            
+                   </tr>
             </tbody>
         </table>
     </div>
